@@ -31,7 +31,7 @@ try:
                 pass
             else:
                 os.mkdir('./Instagram Downloads')
-            with open("./Instagram Downloads/%s-%s.jpg"%(username, str(datetime.now()).replace(":", "-")), 'wb') as f:
+            with open("./Instagram Downloads/%s-%s-%s.jpg"%(username, id, str(datetime.now()).replace(":", "-")), 'wb') as f:
                 f.write(r.content)
             print("Saved to Instagram Downloads")
         else:
